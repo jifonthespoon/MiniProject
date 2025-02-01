@@ -7,26 +7,26 @@
 
 import Foundation
 
-class ViewModel: ObservableObject {
+// TODO: What protocol does the ViewModel need to ensure its variable is kept track of on the UI?
+class ViewModel {
+    // TODO: What wrapper does this variable need to keep track of the changes on the UI?
     var lists: [ItemList] = [
-        // Note: You could add some mock lists here to make testing easy.
+        // TODO: Instantiate some ItemLists here to see them in the preview
+        
     ]
     
-    init() {}
-    
-    // MARK: - User Intents
-    /// Creates a new empty ItemList with the given name.
-    func createList(name: String) {
-        // TODO: Complete this function.
+    func createNewList() {
+        // TODO: Creates a new empty ItemList with a default name and adds it to the lists variable
+
     }
     
-    /// Adds an item with the given name to an ItemList.
     func addItem(to list: ItemList, name: String) {
-        // TODO: Complete this function.
+        // TODO: Adds an item with the given name to an ItemList
+
     }
     
-    /// Toggle an item as complete or incomplete.
     func toggleItemAsCompleted(_ item: ItemList.Item, list: ItemList) {
-        // TODO: Complete this function.
+        // TODO: Toggles an Item as complete or incomplete
+
     }
 }
